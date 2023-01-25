@@ -11,7 +11,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @EnableWebSecurity(debug = true) // 디버그모드 on
-@EnableGlobalMethodSecurity(prePostEnabled = true) // 지금부터 prePost 로 권한체크를 하겠다.
+@EnableGlobalMethodSecurity(prePostEnabled = true) // 지금부터 prePost 로 권한체크를 하겠다. 즉, 권한체크 ON
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
@@ -35,7 +35,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
-    // security 는 기본적으로 모든 페이지를 막고있다.->롤 정해져있는 페이지말고 : 풀어주려면?
+    // security 는 기본적으로 모든 페이지를 막고있다.->롤 정해져있는 페이지말고 "/"와 같은 페이지를 풀어주려면?
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests((requests) ->

@@ -19,7 +19,7 @@ public class HomController {
         return SecurityContextHolder.getContext().getAuthentication();
     }
 
-    @PreAuthorize(value = "hasAnyAuthority('ROLE_USER')")
+    @PreAuthorize(value = "hasAnyAuthority('ROLE_USER')") // 접근권한 설정
     @RequestMapping("/user")
     public SecurityMessage user() {
         return SecurityMessage.builder()
@@ -28,7 +28,7 @@ public class HomController {
                 .build();
     }
 
-    @PreAuthorize(value = "hasAnyAuthority('ROLE_ADMIN')")
+    @PreAuthorize(value = "hasAnyAuthority('ROLE_ADMIN')") // 접근권한 설정
     @RequestMapping("/admin")
     public SecurityMessage admin() {
         return SecurityMessage.builder()
