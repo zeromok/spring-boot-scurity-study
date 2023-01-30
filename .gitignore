@@ -5,8 +5,11 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
+<<<<<<< HEAD
 .idea
 
+=======
+>>>>>>> 38dcd7e66c5fe38c0ac27deb6719f577ff98b275
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
