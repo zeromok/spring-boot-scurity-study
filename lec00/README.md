@@ -1,1 +1,3 @@
-# sp-fastcampus-spring-sec
+# lec00
+
+repo clone
