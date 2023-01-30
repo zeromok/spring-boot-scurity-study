@@ -1,3 +1,3 @@
 # lec00
 
-repo clone
+repo clone 후 Gradle Init
